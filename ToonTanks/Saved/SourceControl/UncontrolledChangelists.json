@@ -5,10 +5,13 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"D:/Unreal/Toon-Tanks/ToonTanks/Content/ComponentsActor.uasset",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Pawns/BP_PawnTurret.uasset",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Pawns/BP_PawnTank.uasset",
-				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Maps/Main.umap"
+				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Maps/Main.umap",
+				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Projectiles/BaseProjectile.uasset",
+				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Actors/BaseProjectile.uasset",
+				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Actors/BP_Projectile.uasset",
+				"D:/Unreal/Toon-Tanks/ToonTanks/Content/ComponentsActor.uasset"
 			]
 		}
 	]

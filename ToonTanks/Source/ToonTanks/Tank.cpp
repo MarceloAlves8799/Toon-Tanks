@@ -7,7 +7,6 @@
 #include "Components/InputComponent.h"
 #include "Kismet/GameplayStatics.h"
 
-
 ATank::ATank() 
 {
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring Arm"));
@@ -24,6 +23,23 @@ void ATank::BeginPlay()
 	PlayerControllerRef = Cast<APlayerController>(GetController());
 }
 
+void ATank::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (PlayerControllerRef == nullptr) return;
+
+	FHitResult HitResult;
+
+	PlayerControllerRef->GetHitResultUnderCursor(
+		ECollisionChannel::ECC_Visibility,
+		false,
+		HitResult);
+
+	RotateTurret(HitResult.ImpactPoint);
+	
+}
+
 // Called to bind functionality to input
 void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -31,6 +47,7 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &ATank::Move);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ATank::Turn);
+	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ATank::Fire);
 }
 
 void ATank::Move(float Value)
