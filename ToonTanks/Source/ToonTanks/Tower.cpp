@@ -40,3 +40,9 @@ bool ATower::InFireRange()
 	float Distance = FVector::Dist(GetActorLocation(), Tank->GetActorLocation());
 	return Distance <= FireRange;
 }
+
+void ATower::HandleDestruction()
+{
+	Super::HandleDestruction();
+	Destroy();
+}
