@@ -10,10 +10,11 @@
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Maps/Main.umap",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Actors/BP_Projectile.uasset",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/GameMode/BP_ToonTanksGameMode.uasset",
-				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/BP_ToonTanksPlayerController.uasset",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/PlayerController/BP_ToonTanksPlayerController.uasset",
-				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Widgets/BP_StartGameWidget.uasset",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Widgets/WBP_StartGameWidget.uasset",
+				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Widgets/WBP_EndGameWidget.uasset",
+				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/BP_ToonTanksPlayerController.uasset",
+				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Widgets/BP_StartGameWidget.uasset",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Projectiles/BaseProjectile.uasset",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/Blueprints/Actors/BaseProjectile.uasset",
 				"D:/Unreal/Toon-Tanks/ToonTanks/Content/ComponentsActor.uasset"
