@@ -69,4 +69,5 @@ void ATank::HandleDestruction()
 	Super::HandleDestruction();
 	SetActorHiddenInGame(false);
 	SetActorTickEnabled(false);
+	bAlive = false;
 }
